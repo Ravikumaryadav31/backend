@@ -159,7 +159,7 @@ app.get('/api/ganeshshop', (req, res) => {
 });
 
 app.get('/api/vasudevshop', (req, res) => {
-  db.query('SELECT * FROM vsudevshop', (err, results) => {
+  db.query('SELECT * FROM vasudevshop', (err, results) => {
     if (err) {
       res.status(500).json({ error: 'Database query error' });
     } else {
