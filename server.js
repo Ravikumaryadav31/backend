@@ -106,8 +106,8 @@ app.get('/api/ravishop', (req, res) => {
   });
 });
 
-app.get('/api/Mahalaxmishop', (req, res) => {
-  db.query('SELECT * FROM Mahalaxmishop', (err, results) => {
+app.get('/api/mahalaxmishop', (req, res) => {
+  db.query('SELECT * FROM mahalaxmishop', (err, results) => {
     if (err) {
       res.status(500).json({ error: 'Database query error' });
     } else {
